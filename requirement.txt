@@ -1,0 +1,19 @@
+#Python module 
+
+tkinter
+opencv
+numpy
+dlib
+scipy
+winsound
+time
+win10toast
+pymongo
+requests
+validate_email
+hashlib
+
+# For website
+node js
+MongoDB
+npm install
