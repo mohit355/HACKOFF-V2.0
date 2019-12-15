@@ -1,0 +1,77 @@
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .15;
+}
+.bg-video__content{
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; 
+}
+
+h2{
+    padding: 5px;
+    border-radius: 10px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    letter-spacing: 8px;
+    word-spacing: 12px;
+    
+}
+.heading{
+    font-size: 5rem;
+    animation: heading 2s infinite ease-out ;
+    width: 80%;
+    margin-left: 9%;
+}
+
+.timeline{
+    font-size: large;
+}
+#home{
+    height: 70vh;
+    padding: 1rem;
+    border: 2px solid white;
+}
+
+#menu1{
+    height: 70vh;
+    padding: 1rem;
+    border: 2px solid white;
+}
+#menu2{
+    height: 70vh;
+    padding: 1rem;
+    border: 2px solid white;
+}
+#menu3{
+    height: 70vh;
+    padding: 1rem;
+    border: 2px solid white;
+}
+
+@keyframes heading{
+    0%{
+        letter-spacing: 5px; transform: scale(1);
+    }
+    25%{
+        letter-spacing: 6px;transform: scale(1.05);
+    }
+    50%{
+        letter-spacing: 8px;transform: scale(1.07);
+    }
+    75%{
+        letter-spacing: 6px;transform: scale(1.05);
+    }
+    100%{
+        letter-spacing: 5px;transform: scale(1);
+    }
+}

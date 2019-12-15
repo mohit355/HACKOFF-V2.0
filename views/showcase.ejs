@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User Timeline</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/showcase.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+
+    <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+            <source src="video/Eye-view.mp4" type="video/mp4">
+            <source src="video/Eye-view.ogv" type="video/ogv">
+            <source src="video/Eye-view.webm" type="video/webm">
+            Your brower is not supported!
+        </video>
+    </div>
+
+<div class="container-fluid">
+  <h2 class="heading">- - - Your Timeline - - -</h2>
+  <p class="timeline">Go through your daily behaviour of eyes, and observe your activity to improve further eyes strain while working</p>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Date</a></li>
+   
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <table border="1px">
+        <tr style="padding: 4rem; text-align: center;">
+            <th style="padding: 1.5rem; text-align: center;">Initial Time</th>
+            <th style="padding: 1.5rem; text-align: center;">Final Time</th>
+            <th style="padding: 1.5rem; text-align: center;">Blinks</th>
+        </tr>
+    <% data.forEach(function(element){ %>
+        <tr style="padding: 4rem; text-align: center;">
+            <td style="padding: 1.5rem; text-align: center;"><%- element[0] %></td>
+            <td style="padding: 1.5rem; text-align: center;"><%- element[1] %></td>
+            <td style="padding: 1.5rem; text-align: center;"><%- element[2] %></td>
+        </tr>
+       
+      <% }); %>
+    
+    </table>
+
+      </div>
+    
+  </div>
+  <button type="button" class="btn btn-success btn-lg btn-block"><a href="/"  style="color: white; text-decoration: none; text-transform: uppercase;">Log Out</a></button>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()+1).slice(-2)) +":"+ (("0"+dt.getMinutes()+1).slice(-2));
+    </script>
+</html>

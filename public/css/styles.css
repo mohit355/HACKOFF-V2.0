@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .15;
+}
+.bg-video__content{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+}
+.login-container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    
+}
+.login-form{
+    width: 30%;
+    
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+}
+
+.btn{
+    width: 100%;
+    text-transform: uppercase;
+}
+.btn:active{
+    transform: translateY(2px);
+}
+
+
+.warning-msg{
+    font-size: 0.8rem;
+    color: red;
+}
+
+

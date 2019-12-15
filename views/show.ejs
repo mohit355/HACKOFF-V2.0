@@ -1,0 +1,14 @@
+<table border="1px">
+    <tr>
+        <th>Time</th>
+        <th>Blinks</th>
+    </tr>
+<% data.forEach(function(element){ %>
+    <tr>
+        <td><%- element[0] %></td>
+        <td><%- element[1] %></td>
+    </tr>
+   
+  <% }); %>
+
+</table>
