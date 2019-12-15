@@ -9,17 +9,8 @@ import pymongo
 import tkinter
 import requests
 from validate_email import validate_email
-import pymongo
 from tkinter import simpledialog,messagebox
 import hashlib
-import numpy as np       
-import cv2
-import dlib    # contain the implementation of facial landmark detection which is used to detect the eye on the frontal face.
-from scipy.spatial import distance as dist
-import winsound
-import time
-from win10toast import ToastNotifier
-import pymongo
 
 
 #myclient=pymongo.MongoClient("mongodb://localhost:27017/")
@@ -219,8 +210,8 @@ def detect():
                     COUNTER = 0
                     
                         
-                if TOTAL==5:
-                    toaster.show_toast("MOHIT", "WORKING PERFECTLY", duration=10,threaded=True)
+                if TOTAL>=20:
+                    toaster.show_toast("OPTICAL MONITORING", "Your eye going well :)", duration=10,threaded=True)
                     #alarm()
                     
                 cv2.putText(frame, "Blinks{}".format(TOTAL), (10, 30), cv2.FONT_HERSHEY_DUPLEX, 0.7, (0, 255, 255), 1)
@@ -256,19 +247,6 @@ def detect():
                     #GUI PARTS'''
 ###################################################################################################################################
 
-
-
-
-
-
-
-
-
-
-
-
-
-#import main2
 
 
 ###### checking repetation  ##############
@@ -353,17 +331,6 @@ def create_account():
     window.destroy()
     already_account()
         
-
-    
-        
-    
-    
-
-
-
-
-
-
 
 ####################################### tkinter Signup function #################################
 def new_account():
