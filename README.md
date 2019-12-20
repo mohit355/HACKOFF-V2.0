@@ -2,6 +2,12 @@
 
 ## **OPTICAL MONITORING**
 
+## **Team members**
+1. [Mohit Raj (Admin)](https://github.com/mohit355)
+2. [Rehan Khan](https://github.com/rehank478)
+3. [Rahul Kumar](https://github.com/rkrider)
+
+
 ### *Problem Statement :*
 
 >*Eyes is one of the important facial structure in our body and It's our responsiblity to take care of that. If we don't blink our eyes 10-15 times/minute while using PC or laptops then it gets dry. This project focus on these issue and help them to take care of that. Sometime you want to focus on studies but your strain doesn't allow it. We can show them their eyes behaviour timeline with a linked website with desktop application which can store the history of the blinks, so that users can check it and improve accordingly. After logged in to the website they can see their details as per data sent by the application.*
@@ -34,3 +40,5 @@
 >12. Open the following URL **'http://localhost:3000'**
       > Home Page of our website open  and looks like as shown below.
         ![home page](https://github.com/mohit355/HACKOFF-V2.0/blob/master/public/img/WhatsApp%20Image%202019-12-15%20at%209.36.05%20AM.jpeg)
+       
+
