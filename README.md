@@ -1,11 +1,7 @@
 # HACKOFF-V2.0
 
-## **OPTICAL MONITORING**
+ ## **OPTICAL MONITORING**
 
-## **Team members**
-1. [Mohit Raj (Admin)](https://github.com/mohit355)
-2. [Rehan Khan](https://github.com/rehank478)
-3. [Rahul Kumar](https://github.com/rkrider)
 
 
 ### *Problem Statement :*
